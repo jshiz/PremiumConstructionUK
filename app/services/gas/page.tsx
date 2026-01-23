@@ -45,7 +45,7 @@ export default function GasPage() {
                         </div>
 
                         <div className="space-y-8 max-w-xl mx-auto lg:max-w-none w-full">
-                            <div className="relative aspect-square rounded-xl overflow-hidden shadow-xl shadow-primary/5">
+                            <div className="relative h-[400px] md:h-[500px] w-full rounded-xl overflow-hidden shadow-xl shadow-primary/5">
                                 <Image
                                     src="/images/gas.png"
                                     alt="Gas & Heating Services"

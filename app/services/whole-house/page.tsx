@@ -46,7 +46,7 @@ export default function WholeHousePage() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="relative aspect-square rounded-xl overflow-hidden shadow-xl shadow-primary/5 max-w-xl mx-auto lg:max-w-none">
+                        <div className="relative h-[400px] md:h-[500px] w-full rounded-xl overflow-hidden shadow-xl shadow-primary/5 max-w-xl mx-auto lg:max-w-none">
                             <Image
                                 src="/images/wholehouse.png"
                                 alt="Whole House Renovation"
