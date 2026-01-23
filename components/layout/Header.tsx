@@ -94,8 +94,14 @@ export function Header() {
                             Contact
                         </Link>
 
+                        <Link href="/portal">
+                            <Button variant="outline" className="hidden lg:flex border-primary text-primary hover:bg-primary hover:text-white">
+                                Client Portal
+                            </Button>
+                        </Link>
+
                         <Link href="/contact">
-                            <Button className="bg-secondary text-primary hover:bg-secondary/90 font-bold shadow-sm">
+                            <Button variant="secondary" className="font-bold shadow-sm">
                                 Get a Quote
                             </Button>
                         </Link>
@@ -129,9 +135,15 @@ export function Header() {
                                 </div>
                                 <Link href="/primestone" onClick={() => setIsOpen(false)} className="text-sm font-medium text-gray-700">Development</Link>
                                 <Link href="/contact" onClick={() => setIsOpen(false)} className="text-sm font-medium text-gray-700">Contact</Link>
-                                <Link href="/contact" onClick={() => setIsOpen(false)}>
-                                    <Button className="w-full">Get a Quote</Button>
-                                </Link>
+
+                                <div className="grid grid-cols-1 gap-3 pt-2">
+                                    <Link href="/portal" onClick={() => setIsOpen(false)}>
+                                        <Button variant="outline" className="w-full">Client Portal</Button>
+                                    </Link>
+                                    <Link href="/contact" onClick={() => setIsOpen(false)}>
+                                        <Button variant="secondary" className="w-full">Get a Quote</Button>
+                                    </Link>
+                                </div>
                             </div>
                         </motion.div>
                     )}
