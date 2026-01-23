@@ -14,6 +14,32 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Premium Construction UK | Whole House Renovations & Extensions",
   description: "🏗️ High-End Renovations & Licensed Trades ✨ Kitchens • Baths • Gas • Electrical 🔨 Quality first.",
+  icons: {
+    icon: [
+      { url: '/favicon/favicon.ico' },
+      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
+    ],
+    apple: [
+      { url: '/favicon/apple-touch-icon.png' },
+    ],
+  },
+  openGraph: {
+    title: "Premium Construction UK",
+    description: "High-End Renovations & Licensed Trades ✨ Kitchens • Baths • Gas • Electrical",
+    url: "https://premiumconstruction.uk",
+    siteName: "Premium Construction UK",
+    images: [
+      {
+        url: "/socialsharing.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Premium Construction UK Projects",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
