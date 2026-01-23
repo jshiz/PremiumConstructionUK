@@ -12,7 +12,7 @@ export function Hero() {
                 {/* In real implementation, use <Image> here with priority */}
                 <div
                     className="w-full h-full opacity-50 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/images/placeholder.svg')" }}
+                    style={{ backgroundImage: "url('/images/hero-luxury.png')" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-primary/40 md:to-primary/20" />
             </div>
@@ -38,7 +38,7 @@ export function Hero() {
                             <Button size="lg" className="w-full sm:w-auto text-base">Get a Free Quote</Button>
                         </Link>
                         <Link href="/services/whole-house">
-                            <Button size="lg" variant="outline" className="w-full sm:w-auto text-base border-white text-white hover:bg-white hover:text-primary">
+                            <Button size="lg" variant="outline" className="w-full sm:w-auto text-base border-white text-white hover:bg-white hover:text-[#1B2B5B]">
                                 View Our Work
                             </Button>
                         </Link>
