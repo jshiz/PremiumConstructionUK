@@ -40,14 +40,13 @@ export function Header() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 group">
                         <motion.div
-                            whileHover={{ rotate: 5, scale: 1.05 }}
-                            className="bg-primary p-1.5 rounded-lg shadow-inner"
+                            whileHover={{ scale: 1.05 }}
+                            className="relative"
                         >
                             <img
                                 src="/favicon/favicon.svg"
                                 alt="Premium Construction Logo"
-                                className="w-8 h-8 md:w-10 md:h-10 invert brightness-0"
-                                style={{ filter: 'brightness(0) invert(1)' }}
+                                className="w-10 h-10 md:w-12 md:h-12 object-contain"
                             />
                         </motion.div>
                         <div className="flex flex-col">

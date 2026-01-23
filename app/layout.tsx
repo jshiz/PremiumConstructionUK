@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://premiumconstruction.uk"),
   title: "Premium Construction UK | Whole House Renovations & Extensions",
   description: "🏗️ High-End Renovations & Licensed Trades ✨ Kitchens • Baths • Gas • Electrical 🔨 Quality first.",
   icons: {
@@ -25,8 +26,8 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Premium Construction UK",
-    description: "High-End Renovations & Licensed Trades ✨ Kitchens • Baths • Gas • Electrical",
+    title: "Premium Construction UK | Whole House Renovations & Extensions",
+    description: "🏗️ High-End Renovations & Licensed Trades ✨ Kitchens • Baths • Gas • Electrical 🔨 Quality first.",
     url: "https://premiumconstruction.uk",
     siteName: "Premium Construction UK",
     images: [
@@ -34,11 +35,17 @@ export const metadata: Metadata = {
         url: "/socialsharing.jpg",
         width: 1200,
         height: 630,
-        alt: "Premium Construction UK Projects",
+        alt: "Premium Construction UK | Luxury Renovations",
       },
     ],
     locale: "en_GB",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Premium Construction UK",
+    description: "High-End Renovations & Licensed Trades ✨ Kitchens • Baths • Gas • Electrical",
+    images: ["/socialsharing.jpg"],
   },
 };
 
