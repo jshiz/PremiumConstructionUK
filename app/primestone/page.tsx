@@ -9,6 +9,7 @@ export default function PrimeStonePage() {
             <PageHero
                 title="PrimeStone Property Group"
                 subtitle="Investment, Acquisition, and Development."
+                image="/images/primestone.png"
             />
 
             <section className="py-20">

@@ -9,6 +9,7 @@ export default function SolarPage() {
             <PageHero
                 title="Solar & Renewables"
                 subtitle="Sustainable energy solutions for modern British homes."
+                image="/images/solar.png"
             />
 
             <section className="py-20">

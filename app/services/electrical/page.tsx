@@ -9,6 +9,7 @@ export default function ElectricalPage() {
             <PageHero
                 title="Electrical Services"
                 subtitle="Fully certified electrical installations and smart home integration."
+                image="/images/electrical.png"
             />
 
             <section className="py-20">

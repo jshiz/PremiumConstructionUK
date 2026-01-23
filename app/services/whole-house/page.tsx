@@ -9,6 +9,7 @@ export default function WholeHousePage() {
             <PageHero
                 title="Whole House Renovations"
                 subtitle="Complete property transformation managed by a single expert team."
+                image="/images/wholehouse.png"
             />
 
             <section className="py-20">

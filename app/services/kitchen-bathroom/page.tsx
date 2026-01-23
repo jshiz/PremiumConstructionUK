@@ -8,6 +8,7 @@ export default function KitchenBathroomPage() {
             <PageHero
                 title="Kitchen & Bathroom Renovations"
                 subtitle="Luxury suites and bespoke cabinetry designed for modern living."
+                image="/images/kitchen.png"
             />
 
             <section className="py-20">

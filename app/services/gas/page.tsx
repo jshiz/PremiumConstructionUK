@@ -9,6 +9,7 @@ export default function GasPage() {
             <PageHero
                 title="Gas & Heating Services"
                 subtitle="Reliable heating solutions and boiler installations by Gas Safe engineers."
+                image="/images/gas.png"
             />
 
             <section className="py-20">

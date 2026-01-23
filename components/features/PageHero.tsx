@@ -10,13 +10,13 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle, image = "/images/placeholder.svg" }: PageHeroProps) {
     return (
-        <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-primary">
+        <section className="relative h-[45vh] min-h-[450px] flex items-center justify-center overflow-hidden bg-[#111827]">
             <div className="absolute inset-0">
                 <div
-                    className="w-full h-full opacity-40 bg-cover bg-center"
+                    className="w-full h-full opacity-30 bg-cover bg-center"
                     style={{ backgroundImage: `url('${image}')` }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary/90" />
             </div>
 
             <div className="container-custom relative z-10 text-center text-white px-4">
