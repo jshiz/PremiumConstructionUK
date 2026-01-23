@@ -4,7 +4,7 @@ export function LocalBusinessSchema() {
         "@type": "HomeAndConstructionBusiness",
         "name": "Premium Construction UK",
         "image": [
-            "https://premiumconstruction.uk/images/placeholder.svg"
+            "https://premiumconstruction.uk/socialsharing.jpg"
         ],
         "@id": "https://premiumconstruction.uk",
         "url": "https://premiumconstruction.uk",

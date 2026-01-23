@@ -57,14 +57,14 @@ export function ServiceGrid() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group"
+                            className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group text-center lg:text-left flex flex-col items-center lg:items-start"
                         >
                             <div className="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
                                 <service.icon className="w-6 h-6" />
                             </div>
                             <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-                            <Link href={service.link} className="inline-flex items-center text-secondary font-semibold hover:text-secondary/80 transition-colors">
+                            <Link href={service.link} className="inline-flex items-center text-secondary font-semibold hover:text-secondary/80 transition-colors mt-auto">
                                 Learn More <ArrowRight className="w-4 h-4 ml-2" />
                             </Link>
                         </motion.div>

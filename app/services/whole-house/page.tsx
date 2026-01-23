@@ -13,8 +13,8 @@ export default function WholeHousePage() {
 
             <section className="py-20">
                 <div className="container-custom">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div className="text-center lg:text-left">
                             <h2 className="text-3xl font-bold text-primary mb-6">Reimagine Your Living Space</h2>
                             <p className="text-gray-600 mb-4 leading-relaxed">
                                 Unlock the full potential of your property with our comprehensive whole-house renovation services.
@@ -24,7 +24,7 @@ export default function WholeHousePage() {
                                 From structural reconfigurations to the final coat of paint, our integrated approach ensures consistent quality and a stress-free experience.
                                 We coordinate all trades, manage the timeline, and ensure compliance with UK building regulations.
                             </p>
-                            <ul className="space-y-3 mb-8">
+                            <ul className="space-y-3 mb-8 inline-block text-left">
                                 {[
                                     "Structural alterations and extension integration",
                                     "Full electrical rewiring and plumbing overhaul",
@@ -33,21 +33,22 @@ export default function WholeHousePage() {
                                     "Project management from start to finish"
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-gray-700">
-                                        <CheckCircle2 className="w-5 h-5 text-secondary" />
+                                        <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" />
                                         {item}
                                     </li>
                                 ))}
                             </ul>
-                            <Link href="/contact">
-                                <Button size="lg">Discuss Your Project</Button>
-                            </Link>
-                        </div>
-                        <div className="bg-gray-100 rounded-xl aspect-square flex items-center justify-center text-gray-400">
-                            {/* Placeholder for project image */}
-                            <div className="text-center">
-                                <span className="block text-4xl mb-2">🏠</span>
-                                Project Gallery Placeholder
+                            <div className="pt-4 flex justify-center lg:justify-start">
+                                <Link href="/contact">
+                                    <Button size="lg">Discuss Your Project</Button>
+                                </Link>
                             </div>
+                        </div>
+                        <div className="relative aspect-square rounded-xl overflow-hidden shadow-xl shadow-primary/5 max-w-xl mx-auto lg:max-w-none">
+                            <div
+                                className="absolute inset-0 bg-cover bg-center"
+                                style={{ backgroundImage: "url('/images/wholehouse.png')" }}
+                            />
                         </div>
                     </div>
                 </div>

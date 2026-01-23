@@ -13,15 +13,15 @@ export default function ElectricalPage() {
 
             <section className="py-20">
                 <div className="container-custom">
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div className="md:col-span-2">
-                            <h2 className="text-3xl font-bold text-primary mb-6 flex items-center gap-3">
+                    <div className="grid lg:grid-cols-3 gap-12 items-center">
+                        <div className="lg:col-span-2 text-center lg:text-left">
+                            <h2 className="text-3xl font-bold text-primary mb-6 flex items-center gap-3 justify-center lg:justify-start">
                                 <Zap className="text-secondary" /> Expert Electrical Solutions
                             </h2>
                             <p className="text-gray-600 mb-6 leading-relaxed">
                                 Safety and compliance are paramount in our electrical work. Our team of qualified electricians handles everything from full house rewires to the installation of modern lighting schemes and EV charging points.
                             </p>
-                            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+                            <div className="grid sm:grid-cols-2 gap-6 mb-8 text-left">
                                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
                                     <h3 className="font-bold text-primary mb-2">Domestic</h3>
                                     <ul className="text-sm text-gray-600 space-y-2">
@@ -41,21 +41,31 @@ export default function ElectricalPage() {
                                     </ul>
                                 </div>
                             </div>
-                            <Link href="/contact">
-                                <Button size="lg">Book an Electrician</Button>
-                            </Link>
+                            <div className="flex justify-center lg:justify-start mt-8">
+                                <Link href="/contact">
+                                    <Button size="lg">Book an Electrician</Button>
+                                </Link>
+                            </div>
                         </div>
 
-                        {/* Sidebar / Badge */}
-                        <div className="bg-primary/5 p-8 rounded-xl border border-primary/10 text-center">
-                            <div className="w-32 h-32 bg-yellow-400 mx-auto rounded-full flex items-center justify-center text-primary font-bold text-xl mb-4 shadow-lg">
-                                NICEIC
+                        <div className="space-y-8 max-w-xl mx-auto lg:max-w-none w-full">
+                            <div className="relative aspect-square rounded-xl overflow-hidden shadow-xl shadow-primary/5">
+                                <div
+                                    className="absolute inset-0 bg-cover bg-center"
+                                    style={{ backgroundImage: "url('/images/electrical.png')" }}
+                                />
                             </div>
-                            <h3 className="text-xl font-bold text-primary mb-2">NICEIC Certified</h3>
-                            <p className="text-sm text-gray-600">
-                                All works are carried out to BS 7671 standards and notified to building control where required.
-                                <br /><span className="text-xs italic text-gray-500">(Placeholder Badge)</span>
-                            </p>
+
+                            {/* Sidebar / Badge */}
+                            <div className="bg-primary/5 p-8 rounded-xl border border-primary/10 text-center">
+                                <div className="w-24 h-24 bg-yellow-400 mx-auto rounded-full flex items-center justify-center text-primary font-bold text-lg mb-4 shadow-lg">
+                                    NICEIC
+                                </div>
+                                <h3 className="text-xl font-bold text-primary mb-2">NICEIC Certified</h3>
+                                <p className="text-sm text-gray-600">
+                                    All works are carried out to BS 7671 standards and notified to building control where required.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

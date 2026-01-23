@@ -38,11 +38,21 @@ export function Header() {
             <nav className="bg-white shadow-md sticky top-0">
                 <div className="container-custom py-4 flex justify-between items-center">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2">
-                        {/* Placeholder for Logo - Using Text if Image fails */}
+                    <Link href="/" className="flex items-center gap-3 group">
+                        <motion.div
+                            whileHover={{ rotate: 5, scale: 1.05 }}
+                            className="bg-primary p-1.5 rounded-lg shadow-inner"
+                        >
+                            <img
+                                src="/favicon/favicon.svg"
+                                alt="Premium Construction Logo"
+                                className="w-8 h-8 md:w-10 md:h-10 invert brightness-0"
+                                style={{ filter: 'brightness(0) invert(1)' }}
+                            />
+                        </motion.div>
                         <div className="flex flex-col">
-                            <span className="text-xl md:text-2xl font-bold text-primary tracking-tight">PREMIUM</span>
-                            <span className="text-xs md:text-sm text-secondary font-semibold tracking-widest uppercase">Construction</span>
+                            <span className="text-xl md:text-2xl font-bold text-primary tracking-tight leading-none">PREMIUM</span>
+                            <span className="text-[10px] md:text-xs text-secondary font-bold tracking-[0.2em] uppercase">Construction</span>
                         </div>
                     </Link>
 
