@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1B2B5B;
+  --color-secondary: #D4AF37;
+  --color-accent: #E2E8F0;
+  --color-background: #ffffff;
+  --color-foreground: #1B2B5B;
+  
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1B2B5B;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@layer utilities {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}

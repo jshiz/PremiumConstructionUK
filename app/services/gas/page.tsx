@@ -1,0 +1,60 @@
+import { PageHero } from "@/components/features/PageHero";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Flame } from "lucide-react";
+
+export default function GasPage() {
+    return (
+        <div>
+            <PageHero
+                title="Gas & Heating Services"
+                subtitle="Reliable heating solutions and boiler installations by Gas Safe engineers."
+            />
+
+            <section className="py-20">
+                <div className="container-custom">
+                    <div className="grid md:grid-cols-3 gap-8">
+                        <div className="md:col-span-2">
+                            <h2 className="text-3xl font-bold text-primary mb-6 flex items-center gap-3">
+                                <Flame className="text-secondary" /> Heating & Plumbing
+                            </h2>
+                            <p className="text-gray-600 mb-6 leading-relaxed">
+                                Stay warm and safe with our comprehensive heating services. We install high-efficiency boilers and underfloor heating systems designed to reduce energy bills and improve comfort.
+                            </p>
+                            <ul className="space-y-4 mb-8">
+                                <li className="p-4 bg-gray-50 rounded-lg border-l-4 border-secondary">
+                                    <strong className="text-primary block">Boiler Installation & Servicing</strong>
+                                    <span className="text-sm text-gray-600">We fit leading brands like Worcester Bosch and Vaillant with extended warranties available.</span>
+                                </li>
+                                <li className="p-4 bg-gray-50 rounded-lg border-l-4 border-secondary">
+                                    <strong className="text-primary block">Underfloor Heating</strong>
+                                    <span className="text-sm text-gray-600">Efficient wet and electric systems for bathrooms, kitchens, and open-plan living.</span>
+                                </li>
+                                <li className="p-4 bg-gray-50 rounded-lg border-l-4 border-secondary">
+                                    <strong className="text-primary block">Central Heating Power flushing</strong>
+                                    <span className="text-sm text-gray-600">Restore your system's efficiency and extend its lifespan.</span>
+                                </li>
+                            </ul>
+                            <Link href="/contact">
+                                <Button size="lg">Get a Heating Quote</Button>
+                            </Link>
+                        </div>
+
+                        {/* Sidebar / Badge */}
+                        <div className="bg-primary/5 p-8 rounded-xl border border-primary/10 text-center">
+                            <div className="w-32 h-32 bg-yellow-400 mx-auto relative flex items-center justify-center text-primary font-bold text-lg mb-4 shadow-lg overflow-hidden">
+                                <div className="absolute inset-x-0 top-0 h-4 bg-black"></div>
+                                Triangle
+                            </div>
+                            <h3 className="text-xl font-bold text-primary mb-2">Gas Safe Registered</h3>
+                            <p className="text-sm text-gray-600">
+                                Our engineers are fully registered and carry ID cards for your peace of mind.
+                                <br /><span className="text-xs italic text-gray-500">(Placeholder Badge)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+}
