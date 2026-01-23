@@ -77,6 +77,7 @@ export function Header() {
                                     >
                                         <Link href="/services/whole-house" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Whole House Renovation</Link>
                                         <Link href="/services/kitchen-bathroom" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Kitchen & Bathroom</Link>
+                                        <Link href="/services/whole-house" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">House Extensions</Link>
                                         <Link href="/services/electrical" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Electrical</Link>
                                         <Link href="/services/gas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Gas & Heating</Link>
                                         <Link href="/services/solar" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Solar Installation</Link>
@@ -94,7 +95,9 @@ export function Header() {
                         </Link>
 
                         <Link href="/contact">
-                            <Button variant="secondary" className="shadow-sm">Get a Quote</Button>
+                            <Button className="bg-secondary text-primary hover:bg-secondary/90 font-bold shadow-sm">
+                                Get a Quote
+                            </Button>
                         </Link>
                     </div>
 

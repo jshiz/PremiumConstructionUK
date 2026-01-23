@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Premium Construction UK",
     images: [
       {
-        url: "/socialsharing.jpg",
+        url: "https://premiumconstruction.uk/socialsharing.jpg",
         width: 1200,
         height: 630,
         alt: "Premium Construction UK | Luxury Renovations",

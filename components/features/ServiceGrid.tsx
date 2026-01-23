@@ -36,6 +36,12 @@ const services = [
         description: "MCS certified renewable energy solutions for a greener home.",
         link: "/services/solar",
     },
+    {
+        icon: Hammer,
+        title: "House Extensions",
+        description: "Maximize your living space with bespoke rear and side extensions.",
+        link: "/services/whole-house",
+    },
 ];
 
 export function ServiceGrid() {
