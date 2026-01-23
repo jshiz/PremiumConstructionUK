@@ -2,6 +2,7 @@ import { PageHero } from "@/components/features/PageHero";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Zap } from "lucide-react";
+import Image from "next/image";
 
 export default function ElectricalPage() {
     return (
@@ -51,9 +52,11 @@ export default function ElectricalPage() {
 
                         <div className="space-y-8 max-w-xl mx-auto lg:max-w-none w-full">
                             <div className="relative aspect-square rounded-xl overflow-hidden shadow-xl shadow-primary/5">
-                                <div
-                                    className="absolute inset-0 bg-cover bg-center"
-                                    style={{ backgroundImage: "url('/images/electrical.png')" }}
+                                <Image
+                                    src="/images/electrical.png"
+                                    alt="Electrical Services"
+                                    fill
+                                    className="object-cover"
                                 />
                             </div>
 

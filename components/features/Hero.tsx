@@ -3,18 +3,21 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function Hero() {
     return (
-        <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-            {/* Background Image Placeholder */}
-            <div className="absolute inset-0 bg-gray-900">
-                {/* In real implementation, use <Image> here with priority */}
-                <div
-                    className="w-full h-full opacity-50 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/images/hero-luxury.png')" }}
+        <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-primary">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+                <Image
+                    src="/images/hero-luxury.png"
+                    alt="Luxury Home Renovation"
+                    fill
+                    className="object-cover opacity-60"
+                    priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-primary/40 md:to-primary/20" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-primary/20" />
             </div>
 
             <div className="container-custom relative z-10 text-center text-white px-4">
@@ -35,10 +38,10 @@ export function Hero() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/contact">
-                            <Button size="lg" className="w-full sm:w-auto text-base">Get a Free Quote</Button>
+                            <Button size="lg" variant="secondary" className="w-full sm:w-auto text-base">Get a Free Quote</Button>
                         </Link>
                         <Link href="/services/whole-house">
-                            <Button size="lg" variant="outline" className="w-full sm:w-auto text-base border-white text-white hover:bg-white hover:text-[#1B2B5B]">
+                            <Button size="lg" variant="outline" className="w-full sm:w-auto text-base border-white text-white hover:bg-white hover:text-primary">
                                 View Our Work
                             </Button>
                         </Link>

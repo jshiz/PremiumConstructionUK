@@ -29,10 +29,10 @@ export function CookieConsent() {
                     <a href="/legal/cookies" className="text-secondary hover:underline ml-1">Read Policy</a>.
                 </p>
                 <div className="flex gap-4">
-                    <Button variant="outline" className="text-white border-white hover:bg-white hover:text-[#1B2B5B]" onClick={() => setIsVisible(false)}>
+                    <Button variant="outline" className="text-sm border-white text-white hover:bg-white hover:text-primary" onClick={() => setIsVisible(false)}>
                         Decline
                     </Button>
-                    <Button onClick={acceptCookies} className="bg-[#D4AF37] text-[#1B2B5B] hover:bg-[#D4AF37]/90 font-bold">
+                    <Button variant="secondary" onClick={acceptCookies} className="font-bold">
                         Accept All
                     </Button>
                 </div>

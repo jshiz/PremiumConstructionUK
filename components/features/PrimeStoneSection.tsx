@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function PrimeStoneSection() {
     return (
@@ -57,10 +58,11 @@ export function PrimeStoneSection() {
                         viewport={{ once: true }}
                     >
                         <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-white/5">
-                            {/* Professional PrimeStone image */}
-                            <div
-                                className="absolute inset-0 bg-cover bg-center"
-                                style={{ backgroundImage: "url('/images/primestone.png')" }}
+                            <Image
+                                src="/images/primestone.png"
+                                alt="PrimeStone Property Group"
+                                fill
+                                className="object-cover"
                             />
                             <div className="absolute inset-0 bg-primary/20" />
                         </div>

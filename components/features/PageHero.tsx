@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface PageHeroProps {
     title: string;
@@ -8,15 +9,18 @@ interface PageHeroProps {
     image?: string;
 }
 
-export function PageHero({ title, subtitle, image = "/images/placeholder.svg" }: PageHeroProps) {
+export function PageHero({ title, subtitle, image = "/images/hero-luxury.png" }: PageHeroProps) {
     return (
-        <section className="relative h-[45vh] min-h-[450px] flex items-center justify-center overflow-hidden bg-[#111827]">
+        <section className="relative h-[45vh] min-h-[450px] flex items-center justify-center overflow-hidden bg-primary">
             <div className="absolute inset-0">
-                <div
-                    className="w-full h-full opacity-30 bg-cover bg-center"
-                    style={{ backgroundImage: `url('${image}')` }}
+                <Image
+                    src={image}
+                    alt={title}
+                    fill
+                    className="object-cover opacity-30"
+                    priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary/90" />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/50 to-primary" />
             </div>
 
             <div className="container-custom relative z-10 text-center text-white px-4">

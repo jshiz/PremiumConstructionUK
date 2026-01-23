@@ -40,7 +40,7 @@ const services = [
         icon: Hammer,
         title: "House Extensions",
         description: "Maximize your living space with bespoke rear and side extensions.",
-        link: "/services/whole-house",
+        link: "/services/extensions",
     },
 ];
 

@@ -75,12 +75,12 @@ export function Header() {
                                         exit={{ opacity: 0, y: 10 }}
                                         className="absolute top-full -left-4 w-64 bg-white shadow-xl rounded-md border border-gray-100 py-2 mt-0"
                                     >
-                                        <Link href="/services/whole-house" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Whole House Renovation</Link>
-                                        <Link href="/services/kitchen-bathroom" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Kitchen & Bathroom</Link>
-                                        <Link href="/services/whole-house" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">House Extensions</Link>
-                                        <Link href="/services/electrical" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Electrical</Link>
-                                        <Link href="/services/gas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Gas & Heating</Link>
-                                        <Link href="/services/solar" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Solar Installation</Link>
+                                        <Link href="/services/whole-house" onClick={() => setServiceOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Whole House Renovation</Link>
+                                        <Link href="/services/kitchen-bathroom" onClick={() => setServiceOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Kitchen & Bathroom</Link>
+                                        <Link href="/services/extensions" onClick={() => setServiceOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">House Extensions</Link>
+                                        <Link href="/services/electrical" onClick={() => setServiceOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Electrical</Link>
+                                        <Link href="/services/gas" onClick={() => setServiceOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Gas & Heating</Link>
+                                        <Link href="/services/solar" onClick={() => setServiceOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Solar Installation</Link>
                                     </motion.div>
                                 )}
                             </AnimatePresence>
@@ -122,6 +122,7 @@ export function Header() {
                                     <p className="text-xs font-semibold text-gray-400 uppercase">Services</p>
                                     <Link href="/services/whole-house" onClick={() => setIsOpen(false)} className="block text-sm text-gray-600">Whole House</Link>
                                     <Link href="/services/kitchen-bathroom" onClick={() => setIsOpen(false)} className="block text-sm text-gray-600">Kitchen & Bathroom</Link>
+                                    <Link href="/services/extensions" onClick={() => setIsOpen(false)} className="block text-sm text-gray-600">House Extensions</Link>
                                     <Link href="/services/electrical" onClick={() => setIsOpen(false)} className="block text-sm text-gray-600">Electrical</Link>
                                     <Link href="/services/gas" onClick={() => setIsOpen(false)} className="block text-sm text-gray-600">Gas</Link>
                                     <Link href="/services/solar" onClick={() => setIsOpen(false)} className="block text-sm text-gray-600">Solar</Link>

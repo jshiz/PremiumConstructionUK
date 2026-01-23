@@ -13,7 +13,8 @@ export default function PortalPage() {
         <div>
             <PageHero
                 title="Client Portal"
-                subtitle="Secure Invoice Payment"
+                subtitle="Secure Invoice Payment & Klarna Finance"
+                image="/images/primestone.png"
             />
 
             <section className="py-20 bg-gray-50">

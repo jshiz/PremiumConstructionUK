@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/features/PageHero";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function KitchenBathroomPage() {
     return (
@@ -18,9 +19,11 @@ export default function KitchenBathroomPage() {
                         {/* Kitchens */}
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             <div className="order-2 lg:order-1 relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg shadow-primary/5 max-w-xl mx-auto lg:max-w-none w-full">
-                                <div
-                                    className="absolute inset-0 bg-cover bg-center"
-                                    style={{ backgroundImage: "url('/images/kitchen.png')" }}
+                                <Image
+                                    src="/images/kitchen.png"
+                                    alt="Luxury Kitchen Renovation"
+                                    fill
+                                    className="object-cover"
                                 />
                             </div>
                             <div className="order-1 lg:order-2 text-center lg:text-left">
@@ -52,9 +55,11 @@ export default function KitchenBathroomPage() {
                                 </div>
                             </div>
                             <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg shadow-primary/5 max-w-xl mx-auto lg:max-w-none w-full">
-                                <div
-                                    className="absolute inset-0 bg-cover bg-center"
-                                    style={{ backgroundImage: "url('/images/bathroom.png')" }}
+                                <Image
+                                    src="/images/bathroom.png"
+                                    alt="Luxury Bathroom Renovation"
+                                    fill
+                                    className="object-cover"
                                 />
                             </div>
                         </div>

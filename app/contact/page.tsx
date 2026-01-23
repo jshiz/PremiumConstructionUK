@@ -8,6 +8,7 @@ export default function ContactPage() {
             <PageHero
                 title="Contact Us"
                 subtitle="Get in touch to discuss your next project."
+                image="/images/hero-luxury.png"
             />
 
             <section className="py-20">

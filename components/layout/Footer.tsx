@@ -45,6 +45,7 @@ export function Footer() {
                         <ul className="space-y-2 text-sm text-gray-300">
                             <li><Link href="/services/whole-house" className="hover:text-white transition-colors">Whole House Renovation</Link></li>
                             <li><Link href="/services/kitchen-bathroom" className="hover:text-white transition-colors">Kitchen & Bathroom</Link></li>
+                            <li><Link href="/services/extensions" className="hover:text-white transition-colors">House Extensions</Link></li>
                             <li><Link href="/services/electrical" className="hover:text-white transition-colors">Electrical Services</Link></li>
                             <li><Link href="/services/gas" className="hover:text-white transition-colors">Gas & Heating</Link></li>
                             <li><Link href="/services/solar" className="hover:text-white transition-colors">Solar Installation</Link></li>

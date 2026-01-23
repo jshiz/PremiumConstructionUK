@@ -4,12 +4,12 @@ import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
-export default function WholeHousePage() {
+export default function ExtensionsPage() {
     return (
         <div>
             <PageHero
-                title="Whole House Renovations"
-                subtitle="Complete property transformation managed by a single expert team."
+                title="House Extensions"
+                subtitle="Expand your living space with seamless architectural integrations."
                 image="/images/wholehouse.png"
             />
 
@@ -17,22 +17,22 @@ export default function WholeHousePage() {
                 <div className="container-custom">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="text-center lg:text-left">
-                            <h2 className="text-3xl font-bold text-primary mb-6">Reimagine Your Living Space</h2>
+                            <h2 className="text-3xl font-bold text-primary mb-6">Expert Space Creation</h2>
                             <p className="text-gray-600 mb-4 leading-relaxed">
-                                Unlock the full potential of your property with our comprehensive whole-house renovation services.
-                                Whether you just purchased a fixer-upper or want to modernize your forever home, we handle every aspect of the project.
+                                A well-designed extension doesn't just add space—it adds significant value to your property and transforms how you live.
+                                At Premium Construction, we specialize in creating seamless additions that look like they've always been part of your home.
                             </p>
                             <p className="text-gray-600 mb-8 leading-relaxed">
-                                From structural reconfigurations to the final coat of paint, our integrated approach ensures consistent quality and a stress-free experience.
-                                We coordinate all trades, manage the timeline, and ensure compliance with UK building regulations.
+                                From initial architectural planning and navigating UK planning permissions to the final structural build and interior finishing,
+                                we provide a complete turnkey solution for all types of extensions.
                             </p>
                             <ul className="space-y-3 mb-8 inline-block text-left">
                                 {[
-                                    "Structural alterations and extension integration",
-                                    "Full electrical rewiring and plumbing overhaul",
-                                    "Plastering, flooring, and decorating",
-                                    "Window and door replacement",
-                                    "Project management from start to finish"
+                                    "Rear and side-return extensions",
+                                    "Double-storey additions",
+                                    "Wrap-around property extensions",
+                                    "Glass-fronted contemporary spaces",
+                                    "Full planning and building regulation support"
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-gray-700">
                                         <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" />
@@ -42,14 +42,14 @@ export default function WholeHousePage() {
                             </ul>
                             <div className="pt-4 flex justify-center lg:justify-start">
                                 <Link href="/contact">
-                                    <Button size="lg">Discuss Your Project</Button>
+                                    <Button size="lg">Request a Consultation</Button>
                                 </Link>
                             </div>
                         </div>
                         <div className="relative aspect-square rounded-xl overflow-hidden shadow-xl shadow-primary/5 max-w-xl mx-auto lg:max-w-none">
                             <Image
                                 src="/images/wholehouse.png"
-                                alt="Whole House Renovation"
+                                alt="House Extension"
                                 fill
                                 className="object-cover"
                             />
