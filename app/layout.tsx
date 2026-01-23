@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Premium Construction UK",
     description: "High-End Renovations & Licensed Trades ✨ Kitchens • Baths • Gas • Electrical",
-    images: ["/socialsharing.jpg"],
+    images: ["https://premiumconstruction.uk/socialsharing.jpg"],
   },
 };
 
