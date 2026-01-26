@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -18,8 +18,11 @@ export function Footer() {
                             Part of the PrimeStone Property Group.
                         </p>
                         <div className="flex gap-4">
-                            <a href="https://www.facebook.com/premiumconstructionuk/" className="bg-white/10 p-2 rounded-full hover:bg-secondary hover:text-primary transition-colors">
+                            <a href="https://www.facebook.com/premiumconstructionuk/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 rounded-full hover:bg-secondary hover:text-primary transition-colors" aria-label="Follow us on Facebook">
                                 <Facebook className="w-5 h-5" />
+                            </a>
+                            <a href="https://www.instagram.com/premiumconstruction_uk/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 rounded-full hover:bg-secondary hover:text-primary transition-colors" aria-label="Follow us on Instagram">
+                                <Instagram className="w-5 h-5" />
                             </a>
                         </div>
                     </div>
@@ -33,8 +36,22 @@ export function Footer() {
                                 <a href="mailto:Contact@PremiumConstruction.uk" className="hover:text-white transition-colors">Contact@PremiumConstruction.uk</a>
                             </li>
                             <li className="flex items-start gap-3">
+                                <Phone className="w-5 h-5 text-secondary shrink-0" />
+                                <a href="tel:+4407453969777" className="hover:text-white transition-colors">+44 07453 969777</a>
+                            </li>
+                            <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-secondary shrink-0" />
-                                <span>Operating Nationwide<br />Head Office: London, UK</span>
+                                <span>69 Roundhedge Way<br />Enfield, EN2 8LD</span>
+                            </li>
+                            <li className="flex items-start gap-3 pt-2">
+                                <a
+                                    href="https://share.google/kKCAifZmTPhDh4QWq"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-md hover:bg-secondary hover:text-primary transition-all text-xs font-semibold"
+                                >
+                                    View Google Profile
+                                </a>
                             </li>
                         </ul>
                     </div>

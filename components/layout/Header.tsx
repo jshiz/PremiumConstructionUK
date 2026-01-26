@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Phone, Mail, Facebook, Menu, X, ChevronDown } from "lucide-react";
+import { Phone, Mail, Facebook, Instagram, Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button, cn } from "@/components/ui/button";
@@ -17,15 +17,22 @@ export function Header() {
             {/* Top Bar */}
             <div className="bg-primary text-white py-2 text-xs md:text-sm">
                 <div className="container-custom flex justify-between items-center">
-                    <div className="flex gap-4 sm:gap-6">
+                    <div className="flex gap-4 sm:gap-6 items-center">
                         <a href="mailto:Contact@PremiumConstruction.uk" className="flex items-center gap-2 hover:text-secondary transition-colors">
-                            <Mail className="w-4 h-4" />
+                            <Mail className="w-4 h-4 text-secondary" />
                             <span className="hidden sm:inline">Contact@PremiumConstruction.uk</span>
-                            <span className="sm:hidden">Email Us</span>
+                            <span className="sm:hidden">Email</span>
                         </a>
-                        <a href="https://www.facebook.com/premiumconstructionuk/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary transition-colors">
+                        <a href="tel:+4407453969777" className="flex items-center gap-2 hover:text-secondary transition-colors">
+                            <Phone className="w-4 h-4 text-secondary" />
+                            <span className="hidden sm:inline">+44 07453 969777</span>
+                            <span className="sm:hidden">Call</span>
+                        </a>
+                        <a href="https://www.facebook.com/premiumconstructionuk/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary transition-colors text-gray-300">
                             <Facebook className="w-4 h-4" />
-                            <span className="hidden sm:inline">Follow us</span>
+                        </a>
+                        <a href="https://www.instagram.com/premiumconstruction_uk/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary transition-colors text-gray-300">
+                            <Instagram className="w-4 h-4" />
                         </a>
                     </div>
                     <div className="hidden sm:block">

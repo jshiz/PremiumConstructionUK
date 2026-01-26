@@ -8,13 +8,18 @@ export function LocalBusinessSchema() {
         ],
         "@id": "https://premiumconstruction.uk",
         "url": "https://premiumconstruction.uk",
-        "telephone": "+440800000000",
+        "telephone": "+447453969777",
+        "sameAs": [
+            "https://www.facebook.com/premiumconstructionuk/",
+            "https://www.instagram.com/premiumconstruction_uk/",
+            "https://share.google/kKCAifZmTPhDh4QWq"
+        ],
         "priceRange": "£££",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Pending",
-            "addressLocality": "London",
-            "postalCode": "Pending",
+            "streetAddress": "69 Roundhedge Way",
+            "addressLocality": "Enfield",
+            "postalCode": "EN2 8LD",
             "addressCountry": "UK"
         },
         "parentOrganization": {
@@ -23,8 +28,8 @@ export function LocalBusinessSchema() {
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 51.5074,
-            "longitude": -0.1278
+            "latitude": 51.667586,
+            "longitude": -0.108809
         },
         "openingHoursSpecification": [
             {

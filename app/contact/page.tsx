@@ -1,6 +1,6 @@
 import { PageHero } from "@/components/features/PageHero";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react";
 
 export default function ContactPage() {
     return (
@@ -37,7 +37,7 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="font-bold text-primary mb-1">Call Us</h3>
                                         <p className="text-gray-600 text-sm mb-1">Monday - Friday, 9am - 6pm</p>
-                                        <a href="tel:+" className="text-lg font-semibold text-primary hover:text-secondary disabled text-gray-400 cursor-not-allowed">0800 [Pending]</a>
+                                        <a href="tel:+4407453969777" className="text-lg font-semibold text-primary hover:text-secondary">+44 07453 969777</a>
                                     </div>
                                 </div>
 
@@ -46,12 +46,24 @@ export default function ContactPage() {
                                         <MapPin className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-primary mb-1">Head Office</h3>
+                                        <h3 className="font-bold text-primary mb-1">Office</h3>
                                         <p className="text-gray-600 text-sm">
-                                            Premium Construction UK<br />
-                                            London, United Kingdom
+                                            69 Roundhedge Way<br />
+                                            Enfield, EN2 8LD
                                         </p>
                                     </div>
+                                </div>
+
+                                <div className="pt-4 flex flex-wrap gap-4">
+                                    <a href="https://www.facebook.com/premiumconstructionuk/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-primary/5 rounded-full text-primary hover:bg-secondary hover:text-white transition-all text-sm font-semibold">
+                                        <Facebook className="w-4 h-4" /> Facebook
+                                    </a>
+                                    <a href="https://www.instagram.com/premiumconstruction_uk/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-primary/5 rounded-full text-primary hover:bg-secondary hover:text-white transition-all text-sm font-semibold">
+                                        <Instagram className="w-4 h-4" /> Instagram
+                                    </a>
+                                    <a href="https://share.google/kKCAifZmTPhDh4QWq" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-primary/5 rounded-full text-primary hover:bg-secondary hover:text-white transition-all text-sm font-semibold">
+                                        <span className="w-4 h-4 flex items-center justify-center font-bold text-[10px] border border-current rounded-full">G</span> Google Profile
+                                    </a>
                                 </div>
                             </div>
 

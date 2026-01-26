@@ -37,7 +37,9 @@ export default function PrivacyPage() {
                 <h2>5. Contact Us</h2>
                 <p>
                     For any questions about this privacy policy, please contact us at:<br />
-                    Email: Contact@PremiumConstruction.uk
+                    Email: Contact@PremiumConstruction.uk<br />
+                    Phone: +44 07453 969777<br />
+                    Address: 69 Roundhedge Way, Enfield, EN2 8LD
                 </p>
             </div>
         </div>
