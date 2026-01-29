@@ -2,7 +2,7 @@ export default function TermsPage() {
     return (
         <div className="container-custom py-20 max-w-4xl">
             <h1 className="text-4xl font-bold mb-8">Terms & Conditions</h1>
-            <p className="text-gray-600 mb-8">Last updated: [Date]</p>
+            <p className="text-gray-600 mb-8">Last updated: January 29, 2026</p>
 
             <div className="prose prose-blue max-w-none text-gray-700">
                 <h2>1. Agreement to Terms</h2>

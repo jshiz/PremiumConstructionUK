@@ -1,3 +1,4 @@
+"use client";
 import { PageHero } from "@/components/features/PageHero";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react";
@@ -80,40 +81,43 @@ export default function ContactPage() {
                         </div>
 
                         {/* Form */}
-                        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-                            <h3 className="text-2xl font-bold text-primary mb-6">Send a Message</h3>
-                            <form className="space-y-4">
-                                <div className="grid md:grid-cols-2 gap-4">
-                                    <div className="space-y-2">
-                                        <label className="text-sm font-medium text-gray-700">First Name</label>
-                                        <input type="text" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="John" />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <label className="text-sm font-medium text-gray-700">Last Name</label>
-                                        <input type="text" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Doe" />
-                                    </div>
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-700">Email Address</label>
-                                    <input type="email" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="john@example.com" />
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-700">Service Required</label>
-                                    <select className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20">
-                                        <option>Whole House Renovation</option>
-                                        <option>Kitchen/Bathroom</option>
-                                        <option>Electrical</option>
-                                        <option>Gas/Heating</option>
-                                        <option>Solar</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-700">Message</label>
-                                    <textarea rows={4} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Tell us about your project..."></textarea>
-                                </div>
-                                <Button className="w-full" size="lg">Send Enquiry</Button>
-                            </form>
+                        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full flex flex-col justify-center text-center">
+                            <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center text-secondary mx-auto mb-6">
+                                <Mail className="w-8 h-8" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-primary mb-2">Send us a Message</h3>
+                            <p className="text-gray-600 mb-8 max-w-sm mx-auto">
+                                We'd love to hear about your project. Copy our email address below to send us your enquiries and plans.
+                            </p>
+
+                            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                                <span className="font-mono text-gray-800 font-medium break-all">
+                                    Contact@PremiumConstruction.uk
+                                </span>
+                                <Button
+                                    onClick={() => {
+                                        navigator.clipboard.writeText("Contact@PremiumConstruction.uk");
+                                        const btn = document.getElementById('copy-btn');
+                                        if (btn) {
+                                            const originalText = btn.innerText;
+                                            btn.innerText = "Copied!";
+                                            setTimeout(() => {
+                                                btn.innerText = originalText;
+                                            }, 2000);
+                                        }
+                                    }}
+                                    id="copy-btn"
+                                    variant="secondary"
+                                    size="sm"
+                                    className="shrink-0 font-bold"
+                                >
+                                    Copy Email
+                                </Button>
+                            </div>
+
+                            <p className="mt-8 text-sm text-gray-500">
+                                We aim to respond to all enquiries within 24 hours.
+                            </p>
                         </div>
 
                     </div>

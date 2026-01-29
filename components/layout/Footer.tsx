@@ -12,7 +12,19 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Brand Info */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4 tracking-tight">PREMIUM <span className="text-secondary">CONSTRUCTION</span></h3>
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="relative bg-white rounded-full p-1">
+                                <img
+                                    src="/favicon/favicon.svg"
+                                    alt="Premium Construction Logo"
+                                    className="w-10 h-10 object-contain"
+                                />
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="text-lg font-bold tracking-tight text-white leading-none">PREMIUM</span>
+                                <span className="text-[10px] text-secondary font-bold tracking-[0.2em] uppercase">Construction</span>
+                            </div>
+                        </div>
                         <p className="text-gray-300 text-sm leading-relaxed mb-6">
                             Expert whole house renovations and property development across the United Kingdom.
                             Part of the PrimeStone Property Group.
