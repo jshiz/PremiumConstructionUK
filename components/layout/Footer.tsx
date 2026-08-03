@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { W7StationTag } from "./W7StationTag";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -101,6 +102,8 @@ export function Footer() {
                         <p>Company No: [00000000] | VAT No: [GB 000 0000 00]</p>
                     </div>
                 </div>
+
+                <W7StationTag />
             </div>
         </footer>
     );
